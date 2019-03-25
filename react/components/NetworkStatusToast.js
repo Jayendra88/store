@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types'
 import { compose, pathOr } from 'ramda'
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { injectIntl, intlShape } from 'react-intl'
 import { withToast } from 'vtex.styleguide'
 
@@ -54,7 +54,7 @@ function NetworkStatusToast(props) {
     } else {
       props.hideToast()
     }
-  }, [offline])
+  }, [offline, props, toastConfig])
 
   return null
 }
