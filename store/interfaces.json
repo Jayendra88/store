@@ -115,5 +115,15 @@
   "promo-bar": {
     "component": "*"
   },
-  "store.custom": {}
+  "store.custom": {
+    "around": [
+      "homeWrapper"
+    ],
+    "before": [
+      "header.full"
+    ],
+    "allowed": [
+      "warehouse-locations"
+    ]
+  }
 }
